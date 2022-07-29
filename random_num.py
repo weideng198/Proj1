@@ -1,3 +1,4 @@
+#This python program generate a series of random numbers divisible by 5. Generate 20 sequence of numbers.  
 import random
 mylist = []
 
