@@ -14,8 +14,6 @@ foreach ($d in $dir)
     git pull -v --all
    # Write-Host 
 
-    #build web and portal
-    #find if there are any difference for project then build it 
 }
 
 Set-Location $PSScriptRoot;

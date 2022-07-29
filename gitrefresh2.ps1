@@ -13,9 +13,6 @@ foreach ($d in $dir)
     Set-Location $d.FullName;
     git push -u origin master
    # Write-Host 
-
-    #build web and portal
-    #find if there are any difference for project then build it 
 }
 
 Set-Location $PSScriptRoot;
