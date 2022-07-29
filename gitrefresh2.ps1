@@ -9,10 +9,10 @@ $dir = Get-ChildItem $repoLocalpath | Where-Object {$_.PSISContainer} | select-o
 
 foreach ($d in $dir) 
 {
-    Write-Host "git push -> $($d.FullName)"  -ForegroundColor Green
+    Write-Host "git push -> Github repo"  -ForegroundColor Green
     Set-Location $d.FullName;
     git push -u origin TestPython
-   # Write-Host 
+    
 }
 
 Set-Location $PSScriptRoot;
