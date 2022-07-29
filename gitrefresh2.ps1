@@ -11,7 +11,7 @@ foreach ($d in $dir)
 {
     Write-Host "git push -> $($d.FullName)"  -ForegroundColor Green
     Set-Location $d.FullName;
-    git push -u origin master
+    git push -u origin TestPython
    # Write-Host 
 }
 
