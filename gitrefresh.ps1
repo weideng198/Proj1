@@ -9,9 +9,9 @@ $dir = Get-ChildItem $repoLocalpath | Where-Object {$_.PSISContainer} | select-o
 
 foreach ($d in $dir) 
 {
-    Write-Host "git pull --all -> $($d.FullName)"  -ForegroundColor Green
+    Write-Host "git pull origin TestPython -> $($d.FullName)"  -ForegroundColor Green
     Set-Location $d.FullName;
-    git pull -v --all
+    git pull origin TestPython
    # Write-Host 
 
 }
